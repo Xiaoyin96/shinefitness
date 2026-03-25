@@ -273,7 +273,7 @@ nav {
 }
 .contact-inner { max-width: 1200px; margin: 0 auto; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-top: 56px; align-items: start; }
-.contact-items { display: flex; flex-direction: column; gap: 12px; }
+.contact-items { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 56px; }
 .citem {
   background: var(--bg); border: 1px solid var(--border);
   border-radius: 10px; padding: 18px 22px;
@@ -451,7 +451,7 @@ footer {
 <div class="phil-section" id="philosophy">
   <div class="sec-label">My Approach</div>
   <h2 class="sec-title">The Shine Method</h2>
-  <p class="sec-sub">Four principles that guide every session, every program, every client.</p>
+  <p class="sec-sub">Five principles that guide every session, every program, every client.</p>
   <div class="phil-grid">
     <div class="phil reveal"><div class="phil-num">S</div><div class="phil-title">Science First</div><div class="phil-desc">Every exercise choice is backed by biomechanics, exercise physiology, and neuromuscular science. No trends, no gimmicks — just what actually works.</div></div>
     <div class="phil reveal"><div class="phil-num">H</div><div class="phil-title">Heal to Perform</div><div class="phil-desc">Pain and old injuries shouldn't hold you back forever. We address the root cause, rebuild strength around it, and get you moving freely again.</div></div>
@@ -486,33 +486,12 @@ footer {
     <div class="sec-label">Get In Touch</div>
     <h2 class="sec-title">Ready to start?</h2>
     <p class="sec-sub">Fill out the form and I'll get back to you within 24 hours.</p>
-    <div class="contact-grid">
-      <div class="contact-items reveal">
+    <div class="contact-items reveal">
         <div class="citem"><div class="citem-label">Location</div><div class="citem-val">Bay Area, California · Online Available</div></div>
         <div class="citem"><div class="citem-label">Instagram</div><div class="citem-val">@shinefitness.fit</div></div>
-        <div class="citem"><div class="citem-label">Email</div><div class="citem-val">contact@shinefitness.fit</div></div>
+        <div class="citem"><div class="citem-label">Email</div><div class="citem-val"><a href="mailto:contact@shinefitness.fit" style="color:inherit;text-decoration:none;">contact@shinefitness.fit</a></div></div>
         <div class="citem"><div class="citem-label">Partnerships</div><div class="citem-val">Open to brand collaborations</div></div>
       </div>
-      <div class="form reveal">
-        <div class="form-row">
-          <div class="fg"><label>First Name</label><input type="text" placeholder="Jane"></div>
-          <div class="fg"><label>Last Name</label><input type="text" placeholder="Doe"></div>
-        </div>
-        <div class="fg"><label>Email</label><input type="email" placeholder="jane@example.com"></div>
-        <div class="fg">
-          <label>I'm interested in</label>
-          <select>
-            <option value="">Select a service...</option>
-            <option>Strength & Sculpt</option>
-            <option>Pain & Injury Recovery</option>
-            <option>Body Intelligence Program</option>
-            <option>General Inquiry</option>
-          </select>
-        </div>
-        <div class="fg"><label>Tell me about your goals</label><textarea placeholder="Share where you're at and what you're hoping to achieve..."></textarea></div>
-        <button class="form-btn">Send Message</button>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -523,11 +502,4 @@ footer {
 
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-document.querySelectorAll('.reveal').forEach(el => {
-  el.style.opacity = '1';
-  el.style.transform = 'none';
-});
-</script>
-</body>
-</html>
+<s

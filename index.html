@@ -326,10 +326,14 @@ footer {
   padding: 36px 60px; border-top: 1px solid var(--border);
   display: flex; justify-content: space-between; align-items: center;
 }
-.footer.logo { font-family: 'Space Grotesk', sans-serif;
+.footer-logo { font-family: 'Space Grotesk', sans-serif;
   font-size: 0.9rem; font-weight: 600; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--text); text-decoration: none;
 }
+.footer-logo:hover { color: var(--accent); }
+.contact-section .sec-sub a { color: var(--accent); text-decoration: none; }
+.contact-section .sec-sub a:hover { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
+.footer-logo:focus-visible, .contact-section .sec-sub a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .footer-logo span { color: var(--accent); }
 .footer-copy { font-size: 0.72rem; color: var(--text-muted); }
 .footer-nav { display: flex; gap: 28px; }

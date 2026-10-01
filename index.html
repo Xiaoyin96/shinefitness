@@ -331,7 +331,8 @@ footer {
   text-transform: uppercase; color: var(--text); text-decoration: none;
 }
 .footer-logo:hover { color: var(--accent); }
-.contact-section .sec-sub a { color: var(--accent); text-decoration: none; }
+.contact-section .sec-sub { max-width: none; }
+.contact-section .sec-sub a { white-space: nowrap; color: var(--accent); text-decoration: none; }
 .contact-section .sec-sub a:hover { color: var(--text); text-decoration: underline; text-underline-offset: 3px; }
 .footer-logo:focus-visible, .contact-section .sec-sub a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .footer-logo span { color: var(--accent); }
@@ -500,7 +501,7 @@ footer {
   <div class="contact-inner">
     <div class="sec-label">Get In Touch</div>
     <h2 class="sec-title">Training schedule</h2>
-    <p class="sec-sub">View scheduled training sessions below. To arrange your own session, <a href="mailto:contact@shinefitness.fit">get in touch</a>.</p>
+    <p class="sec-sub">View scheduled training sessions below.<br>To arrange your own session, <a href="mailto:contact@shinefitness.fit">get in touch</a>.</p>
     <div class="schedule-calendar">
       <iframe src="https://calendar.google.com/calendar/embed?src=3440af06c54481953640fadaa8c0e7fce68c9dcbcccc3b1ae22c5bb3ea037190%40group.calendar.google.com&amp;ctz=America%2FLos_Angeles&amp;mode=WEEK&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0" title="Shine Fitness scheduled training sessions — Pacific Time" loading="eager"></iframe>
     </div>
